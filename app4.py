@@ -71,7 +71,7 @@ def main():
     st.slider('데이터',-0.5,2.7,step=0.1,value=1.0)
 
     with st.expander('상세내용보기') :
-        st.text('상세 내용 입니다')
+        st.text('상세 내용 입니다---')
 
 
 
