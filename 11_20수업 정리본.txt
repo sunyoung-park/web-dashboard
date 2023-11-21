@@ -1,0 +1,71 @@
+
+
+
+*아나콘다 프롬프트로 확인할 것*
+
+conda env list > 버전 확인
+conda activate streamlit39 > 파이썬 가상환경 실행
+python -V >  파이썬 가상환경 버전 확인
+conda deactivate > 가상환경 실행 취소 후 base로 복귀
+
+아나콘다는 우선 여기서 끝나고 더이상 실행 X
+
+*GitHub*
+github 회원가입 후 github Desktop 설치 
+
+repository == 프로젝트
+
+commit to main > 내 컴퓨터에서 수정한 작업 확정 짓기
+
+VsCode - Extensions에서 Ptyhon 설치 후 파이썬 언어로 코딩 작업 가능
+
+*Streamlit*
+pip install streamlit
+
+ #전반적인 수업 내용 순서#
+
+-아나콘다 설치
+-아나콘다 프롬프트 실행
+-파이썬 가상환경 설치
+-깃허브닷컴 계정생성
+-깃허브 데스트탑 설치(깃허브 작업 상황을 시각적으로 보여줌)
+-레파지토리(프로젝트같은 의미/깃허브에서 생성 가능) 생성
+-VS Code 설치
+-Vs Code에서 git 연동하기 위해 git 설치(구글에서 git 검색 후 설치)
+-깃허브닷컴의 레파지토리 클론 (깃허브 데스크탑 이용)
+-Vs Code에서 app.py 파일 만들기
+-Vs Code 아랫 부붙에서 파이썬 인터프리터 선택
+-스트림릿용 가상환경으로 선택(3.9버전)
+-웹 대시보드 개발에 필요한 프레임워크인, 스트림릿을 설치
+-Vs Code에서 터미널을 새로 열고
+-만약에 터미널(base) 나 (streamlit39) 가 없으면, 새로운 커맨드 프롬프트(cmd)를 다시 연다.
+-cmd창 터미널(streamlit39)에 pip install streamlit 입력하여 프레임워크 설치
+-설치 후 위의 터미널에 streamlit hello 를 입력 후 실행하여 동작 확인
+-app.py에 샘플코드 작성 후 실행
+-실행은 streamlit 터미널에 streamlit run app.py 입력 후 실행
+
+여기서부턴 전부 VS Code로 작업
+
+*streamlit 의 기본 틀*
+
+import streamlit as st
+
+def main():
+    st.title('웹 대시보드')
+
+if __name__ == '__main__':
+    main()
+
+
+    st.text('웹 대시보드 개발하기') 
+    
+    st.header('이 영역은 헤더  영억')
+    st.subheader('이 영역은 서브헤더 영역')
+    st.write('안녕하세요')
+
+title > header > subheader > write > text 
+
+    st.success('성공했을때의 메세지를 보여줄 때')
+    st.warning('경고 메세지를 보여줄 때')
+    st.info('정보성 메세지를 보여줄 때')
+    st.error('문제가 발생했음을 보여주고 싶을 때')
